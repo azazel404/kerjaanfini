@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- ini css boostrap 3  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <!-- ini buat custom css -->
+    <link rel="stylesheet" href="style/custom.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>TEST KEPRIBADIAN</title>
+</head>
+
+<body>
+    <!-- container buat memperkecil layar pixel secara persisi -->
+    <div class="container">
+        <!-- row baris dari kerangka html -->
+
+        <!-- bari kerangka html -->
+        <div class="row"><br><br>
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="loader">
+                    <div class="col-xs-3 col-xs-offset-5">
+                    </div>
+
+                    <!-- tag ngambil css id element quiz -->
+                    <div id="quiz">
+                        <div class="question">
+                            <h3><span class="label label-warning" id="qid">1</span>
+                                <span id="question">Lebih banyak bicara daripada mendengarkan, bila sudah bicara sulit
+                                    berhenti</span>
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="radio" id="f-option" name="selector" value="1">
+                                <label for="f-option" class="element-animation">Ya</label>
+                                <div class="check"></div>
+                            </li>
+
+                            <li>
+                                <input type="radio" id="s-option" name="selector" value="2">
+                                <label for="s-option" class="element-animation">Tidak</label>
+                                <div class="check">
+                                    <div class="inside"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-muted">
+                    <span id="answer"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div id="result-of-question" class="pulse animated" style="display: none;">
+                    <!-- <span id="totalCorrect" class="pull-right"></span> -->
+                    <table class="table table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th id="totalCorrect"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="quizResult"></tbody>
+                    </table>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" placeholder="email">
+                    </div>
+                    <button id="submitdata" class="btn btn-lg btn-block btn-primary"
+                        style="margin-top:-10px; margin-bottom:50px">Send Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- link jquery untuk aktifin jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/perintah.js"></script>
+
+</html>
